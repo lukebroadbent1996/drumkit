@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+body {
+    font-family: 'Montserrat', helvetica, sans-serif;
+    background-color: #9AC8EB;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 10em;
+    margin: 0;
+    color: white;
+}
+p{
+    font-size: 1em;
+    text-transform: uppercase;
+    
+}
+#inputs{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#drums{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+    width: 7em;
+    height: 7em;
+    border-color: white;
+    border-top-style:solid;
+    /* border-bottom-style: solid; */
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-radius: 2em;
+    /* border-style: solid;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1; */
+   
+}
+
+button{
+    color: white;
+    background: none;
+    margin: 20em;
+    border: 5px solid;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    height: 50px;
+    width: 80px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+img{
+    height: 20em;
+    width: 20em;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #inputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 7em;
+    }
+  
+}
